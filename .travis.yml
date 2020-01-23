@@ -30,7 +30,7 @@ env:
   # - IMAGE="images:debian/stretch" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="images:debian/stretch" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
   #     Odoo 11.0
-  - IMAGE="images:debian/stretch" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
+  #- IMAGE="images:debian/stretch" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="images:debian/stretch" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="images:debian/stretch" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
   # Ubuntu 14.04 (trusty)
@@ -56,18 +56,18 @@ env:
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=9.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=9.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
   # #     Odoo 10.0
-  # - IMAGE="ubuntu:xenial" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
+  #- IMAGE="ubuntu:xenial" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=10.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
   #     Odoo 11.0
-  - IMAGE="ubuntu:xenial" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
+  #- IMAGE="ubuntu:xenial" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   # - IMAGE="ubuntu:xenial" ODOO_VERSION=11.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
   # Ubuntu 18.04 (bionic)
   #     Odoo 13.0
   - IMAGE="ubuntu:bionic" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
-  # - IMAGE="ubuntu:bionic" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
-  # - IMAGE="ubuntu:bionic" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
+  - IMAGE="ubuntu:bionic" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
+  - IMAGE="ubuntu:bionic" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
 
 install:
   # Spawn a LXD container
