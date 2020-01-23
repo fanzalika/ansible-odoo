@@ -1,4 +1,4 @@
-# Odoo [![Build Status](https://travis-ci.org/OCA/ansible-odoo.png)](https://travis-ci.org/OCA/ansible-odoo)
+# Odoo [![Build Status](https://travis-ci.org/fanzalika/ansible-odoo.png)](https://travis-ci.org/fanzalika/ansible-odoo)
 
 Ansible role to install Odoo from a Git or Mercurial repository, or from pip,
 and configure it.
