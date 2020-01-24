@@ -9,6 +9,7 @@ apt-get install -qq python-virtualenv python-apt python-pip python-dev lsb-relea
 virtualenv $VENV
 wget $GET_PIP_URL -O $VENV/get-pip.py
 $VENV/bin/python $VENV/get-pip.py
+if [ $( $VENV/bin/pip --version | grep -c "2.7" ) -eq 1 ]; then $VENV/bin/pip install --upgrade "setuptools<45.0.0"; fi
 $VENV/bin/pip install "ansible>=$ANSIBLE_VERSION"
 # Install PostgreSQL
 apt-get install -qq postgresql postgresql-contrib
